@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculadora de bases numéricas</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <H2 class="welcome">BIENVENIDO</H2>
+    <div class="contenedor">
+    <h1 class="typing"></h1>
+    <form>
+      <label>Ingrese un número:</label>
+      <input type="text" id="number" class="num">
+      <br>
+      <label>Seleccione la base actual:</label>
+      <select id="currentBase" >
+        <option value="2">binaria</option>
+        <option value="3">base 3</option>
+        <option value="4">base 4</option>
+        <option value="5">base 5</option>
+        <option value="6">base 6</option>
+        <option value="7">base 7</option>
+        <option value="8">octal</option>
+        <option value="9">base 9</option>
+        <option value="10">decimal</option>
+        <option value="11">base 11</option>
+        <option value="12">base 12</option>
+        <option value="13">base 13</option>
+        <option value="14">base 14</option>
+        <option value="15">base 15</option>
+        <option value="16">hexadecimal</option>
+      </select>
+      <br>
+      <label>Seleccione la base deseada:</label>
+      <select id="desiredBase">
+        <option value="2">binaria</option>
+        <option value="3">base 3</option>
+        <option value="4">base 4</option>
+        <option value="5">base 5</option>
+        <option value="6">base 6</option>
+        <option value="7">base 7</option>
+        <option value="8">octal</option>
+        <option value="9">base 9</option>
+        <option value="10">decimal</option>
+        <option value="11">base 11</option>
+        <option value="12">base 12</option>
+        <option value="13">base 13</option>
+        <option value="14">base 14</option>
+        <option value="15">base 15</option>
+        <option value="16">hexadecimal</option>
+      </select>
+      <br>
+      <button type="button" onclick="convertNumber()" class="convert">Convertir</button>
+    </form>
+    <br>
+    <label>Resultado:</label>
+    <span id="result"></span>
+</div>
+<footer>
+    <p>Copyright © <span id="year"></span> <span id="name"></span>. Todos los derechos reservados para Marcos Roman Cuellar Recillas.</p>
+</footer>
+    <script src="script.js"></script>
+  </body>
+</html>
